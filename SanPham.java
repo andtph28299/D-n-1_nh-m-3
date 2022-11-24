@@ -5,6 +5,8 @@
  */
 package Models;
 
+import java.awt.Image;
+
 /**
  *
  * @author DO VAN DAO
@@ -14,22 +16,7 @@ public class SanPham {
     String maSP, maLoai, maChatlieu, XuatXu, maMauSac, tenSP, size;
     int soLuong, giaban;
     float trongLuong;
-
-    public SanPham(String maSP, String maLoai, String maChatlieu, String XuatXu, String maMauSac, String tenSP, String size, int soLuong, int giaban, float trongLuong) {
-        this.maSP = maSP;
-        this.maLoai = maLoai;
-        this.maChatlieu = maChatlieu;
-        this.XuatXu = XuatXu;
-        this.maMauSac = maMauSac;
-        this.tenSP = tenSP;
-        this.size = size;
-        this.soLuong = soLuong;
-        this.giaban = giaban;
-        this.trongLuong = trongLuong;
-    }
-
-    public SanPham() {
-    }
+    Image hinhAnh;
 
     public String getMaSP() {
         return maSP;
@@ -59,8 +46,8 @@ public class SanPham {
         return XuatXu;
     }
 
-    public void setMaXuatXu(String maXuatXu) {
-        this.XuatXu = maXuatXu;
+    public void setXuatXu(String XuatXu) {
+        this.XuatXu = XuatXu;
     }
 
     public String getMaMauSac() {
@@ -109,6 +96,31 @@ public class SanPham {
 
     public void setTrongLuong(float trongLuong) {
         this.trongLuong = trongLuong;
+    }
+
+    public Image getHinhAnh() {
+        return hinhAnh;
+    }
+
+    public void setHinhAnh(Image hinhAnh) {
+        this.hinhAnh = hinhAnh;
+    }
+
+    public SanPham() {
+    }
+
+    public SanPham(String maSP, String maLoai, String maChatlieu, String XuatXu, String maMauSac, String tenSP, String size, int soLuong, int giaban, float trongLuong, Image hinhAnh) {
+        this.maSP = maSP;
+        this.maLoai = maLoai;
+        this.maChatlieu = maChatlieu;
+        this.XuatXu = XuatXu;
+        this.maMauSac = maMauSac;
+        this.tenSP = tenSP;
+        this.size = size;
+        this.soLuong = soLuong;
+        this.giaban = giaban;
+        this.trongLuong = trongLuong;
+        this.hinhAnh = hinhAnh;
     }
 
 }

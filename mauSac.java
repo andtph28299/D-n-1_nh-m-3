@@ -9,20 +9,20 @@ package Models;
  *
  * @author DO VAN DAO
  */
-public class chatLieu {
-    String maChatLieu,ten;
+public class mauSac {
+    String maMauSac,ten;
 
-    public chatLieu(String maChatLieu, String ten) {
-        this.maChatLieu = maChatLieu;
+    public mauSac(String maMauSac, String ten) {
+        this.maMauSac = maMauSac;
         this.ten = ten;
     }
 
-    public String getMaChatLieu() {
-        return maChatLieu;
+    public String getMaMauSac() {
+        return maMauSac;
     }
 
-    public void setMaChatLieu(String maChatLieu) {
-        this.maChatLieu = maChatLieu;
+    public void setMaMauSac(String maMauSac) {
+        this.maMauSac = maMauSac;
     }
 
     public String getTen() {
@@ -33,7 +33,7 @@ public class chatLieu {
         this.ten = ten;
     }
 
-    public chatLieu() {
+    public mauSac() {
     }
     
 }
